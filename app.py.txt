@@ -1,0 +1,9 @@
+# In app.py
+import os
+
+# Create a 'data' folder if it doesn't exist
+if not os.path.exists('data'):
+    os.makedirs('data')
+
+# Point the DB file to this folder
+DB_FILE = 'data/invoices_db.json'
